@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Optional: Set a custom font-family */
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2em; /* 75% larger than dummy text font size */
+    margin: 20px 0; /* Adjust spacing above and below heading */
+  }
+#first{
+  background-color: rgb(126, 25, 25);
+  }
+  #second{
+    background-color:darkolivegreen;
+    }
+    #third{
+      background-color:chocolate;
+      }
+
+  .section {
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 5px; /* Adjust spacing between sections */
+    position: relative;
+    display: inline block;
+    background-color: beige;
+  }
+
+  .section-title {
+    background-color: #3498db; /* Set a unique color for section title region */
+    color: #fff; /* Set text color for better readability */
+    border: 1px solid black;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px; /* Adjust padding for section title region */
+  }
+
+  /* Desktop view */
+  @media (min-width: 992px) {
+    .section {
+      width: 33.33%; /* Equal width for each section */
+      float: left;
+      display: inline block;
+    }
+  }
+
+  /* Tablet view */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .section {
+      width: 50%; /* Equal width for first two sections */
+      float: left;
+    }
+
+    .section:nth-child(3) {
+      width: 100%; /* Full width for the third section in the second row */
+      clear: both;
+    }
+  }
+
+  /* Mobile view */
+  @media (max-width: 767px) {
+    .section {
+      width: 100%; /* Full width for each section */
+      float: none;
+    }
+  }
